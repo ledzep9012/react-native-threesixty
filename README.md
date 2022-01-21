@@ -11,11 +11,16 @@ npm install react-native-threesixty
 ## Usage
 
 ```js
-import { multiply } from "react-native-threesixty";
+import { Image360 } from 'react-native-threesixty';
 
 // ...
 
-const result = await multiply(3, 7);
+<Image360
+  urls={[]}
+  ImageComponent={Image} // can use FastImage for better perf in android
+  loader={<ActivityIndicator />}
+  imageStyle={{ height: 240, width: 360 }}
+/>;
 ```
 
 ## Contributing
